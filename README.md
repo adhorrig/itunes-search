@@ -8,11 +8,10 @@ include('iTunes.php');
 
 $iTunes = new iTunes();
 
-$result = $iTunes->search(
-    $term = 'Taylor Swift',
-    $media = 'music',
-    $limit = 10
-);
+$result = $iTunes->search(array(
+    'term' => 'Taylor Swift',
+    'media' => 'music'
+));
 
 foreach ($result->results as $data) {
   echo $data->artistName;
@@ -24,7 +23,9 @@ foreach ($result->results as $data) {
 You can also lookup data by specific ID. 
 
 ```php 
-$result = $iTunes->lookup(159260351);
+$result = $iTunes->lookup(array(
+    'id' => '159260351'  
+);
 
 foreach ($result->results as $data) {
     echo $data->artistName;
