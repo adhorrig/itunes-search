@@ -5,9 +5,10 @@ include('iTunes.php');
 $iTunes = new iTunes();
 
 $result = $iTunes->search(
-    $term = 'Taylor Swift',
-    $media = 'music',
-    $limit = 10
+    array(
+    'term' => 'Taylor Swift',
+    'media' => 'music'
+)
 );
 
 ?>
@@ -31,7 +32,9 @@ $result = $iTunes->search(
 
 <?
 
-$result = $iTunes->lookup(159260351);
+$result = $iTunes->lookup(array(
+    'id' => '159260351'  
+);
 
 foreach ($result->results as $data) : ?>
 
