@@ -14,10 +14,10 @@ $result = $iTunes->search(
     $limit = 10
 );
 
-foreach ($result['results'] as $data) {
-  echo $data['artistName'];
-  echo $data['trackName'];
-  echo $data['collectionName'];
+foreach ($result->results as $data) {
+  echo $data->artistName;
+  echo $data->trackName;
+  echo $data->collectionName;
 }
             
 ```
@@ -26,8 +26,8 @@ You can also lookup data by specific ID.
 ```php 
 $result = $iTunes->lookup(159260351);
 
-foreach ($result['results'] as $data) {
-    echo $data['artistName'];
-    echo $data['primaryGenreName'];
+foreach ($result->results as $data) {
+    echo $data->artistName;
+    echo $data->primaryGenreName;
 }
 ```
