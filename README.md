@@ -32,3 +32,19 @@ foreach ($result->results as $data) {
     echo $data->primaryGenreName;
 }
 ```
+
+Movie search example
+
+```php
+$result = $iTunes->search(array(
+    'term' => 'Mad Max',
+    'media' => 'movie'
+));
+
+foreach ($result->results as $data){
+    echo $data->trackName;
+    echo $data->longDescription;
+}
+```
+
+
