@@ -25,6 +25,6 @@ class iTunes
     private function getData($url)
     {
         $content = file_get_contents($url);
-        return json_decode($content, true);
+        return json_decode($content);
     }
 }
