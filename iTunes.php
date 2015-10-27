@@ -12,14 +12,15 @@ class iTunes
     const lookupUrl = 'https://itunes.apple.com/lookup?';
 
 
-    public function search($term, $media = 'all', $limit = 25, $country = 'IE')
+     public function search($term, $media = null, $limit = 25, $country = 'IE', $entity = null)
     {
-        return $this->getData(self::searchUrl . 'country=' . $country . '&limit=' . $limit . '&media=' . $media . '&term=' . urlencode($term));
+        return $this->getData(self::searchUrl . 'entity=' . $entity . '&country=' . $country . '&limit=' . $limit . '&media=' . $media . '&term=' . urlencode($term));
     }
 
-    public function lookup($id)
+    public function lookup($id, $media = null, $entity = null)
     {
-        return $this->getData(self::lookupUrl . 'id=' . $id);
+
+        return $this->getData(self::lookupUrl . 'media=' . $media . '&entity=' . $entity . '&id=' . $id);
     }
 
     private function getData($url)
