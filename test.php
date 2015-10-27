@@ -8,8 +8,7 @@ $result = $iTunes->search(
     array(
     'term' => 'Taylor Swift',
     'media' => 'music'
-)
-);
+));
 
 ?>
     <table>
