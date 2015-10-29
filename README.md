@@ -42,7 +42,7 @@ $result = $iTunes->search(array(
 ));
 
 foreach ($result->results as $data){
-    echo $data->trackName;
+    echo $data->collectionName;
     echo $data->longDescription;
 }
 ```
