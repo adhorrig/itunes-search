@@ -33,7 +33,7 @@ $result = $iTunes->search(
 
 $result = $iTunes->lookup(array(
     'id' => '159260351'  
-);
+));
 
 foreach ($result->results as $data) : ?>
 
