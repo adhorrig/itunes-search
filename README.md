@@ -1,5 +1,6 @@
 # itunes-search
-A simple PHP class for searching iTunes Store data.
+A simple PHP class for searching iTunes Store data. Read iTunes search documentation here:
+ * https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
 
 ## Example
 
