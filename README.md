@@ -1,5 +1,5 @@
 # itunes-search
-A simple PHP class for searching iTunes.
+A simple PHP class for searching iTunes Store data.
 
 ## Example
 
