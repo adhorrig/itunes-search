@@ -10,9 +10,7 @@ https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web
 ```php
 include('iTunes.php');
 
-$iTunes = new iTunes();
-
-$result = $iTunes->search(array(
+$result = iTunes::search(array(
     'term' => 'Taylor Swift',
     'media' => 'music'
 ));
@@ -27,7 +25,7 @@ foreach ($result->results as $data) {
 You can also lookup data by specific ID. 
 
 ```php 
-$result = $iTunes->lookup(array(
+$result = iTunes::lookup(array(
     'id' => '159260351'  
 );
 
@@ -40,7 +38,7 @@ foreach ($result->results as $data) {
 Movie search example
 
 ```php
-$result = $iTunes->search(array(
+$result = iTunes::search(array(
     'term' => 'Mad Max',
     'media' => 'movie'
 ));
