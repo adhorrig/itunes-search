@@ -12,17 +12,17 @@ class iTunes
     const lookupUrl = 'https://itunes.apple.com/lookup?';
 
 
-    public function search($data)
+    public static function search($data)
     {
-        return $this->getData(self::searchUrl . http_build_query($data));
+        return self::getData(self::searchUrl . http_build_query($data));
     }
 
-    public function lookup($data)
+    public static function lookup($data)
     {
-        return $this->getData(self::lookupUrl . http_build_query($data));
+        return self::getData(self::lookupUrl . http_build_query($data));
     }
 
-    private function getData($url)
+    private static function getData($url)
     {
         $content = file_get_contents($url);
         return json_decode($content);
