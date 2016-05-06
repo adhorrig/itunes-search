@@ -2,9 +2,7 @@
 
 include('iTunes.php');
 
-$iTunes = new iTunes();
-
-$result = $iTunes->search(
+$result = iTunes::search(
     array(
     'term' => 'Taylor Swift',
     'media' => 'music'
@@ -31,7 +29,7 @@ $result = $iTunes->search(
 
 <?
 
-$result = $iTunes->lookup(array(
+$result = iTunes::lookup(array(
     'id' => '159260351'  
 ));
 
