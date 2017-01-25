@@ -1,0 +1,19 @@
+{
+    "name": "anthonybloomer/itunes-search",
+    "description": "A simple PHP class for searching iTunes Store data.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anthony Bloomer",
+            "email": "ant0@protonmail.ch"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+    	"psr-0": {
+            "iTunesSearch": "src/"
+        }
+    }
+}

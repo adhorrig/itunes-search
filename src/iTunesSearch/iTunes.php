@@ -5,6 +5,9 @@
  * Read iTunes search documentation here:
  * https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
  */
+
+namespace iTunesSearch;
+
 class iTunes
 {
 

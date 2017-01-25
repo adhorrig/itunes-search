@@ -1,6 +1,8 @@
 <?php
 
-include('iTunes.php');
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use iTunesSearch\iTunes as iTunes;
 
 $result = iTunes::search(
     array(
@@ -30,7 +32,7 @@ $result = iTunes::search(
 <?
 
 $result = iTunes::lookup(array(
-    'id' => '159260351'  
+    'id' => '159260351'
 ));
 
 foreach ($result->results as $data) : ?>
