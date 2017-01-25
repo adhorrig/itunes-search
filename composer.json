@@ -1,12 +1,15 @@
 {
     "name": "anthonybloomer/itunes-search",
     "description": "A simple PHP class for searching iTunes Store data.",
+    "keywords": ["iTunes"],
+    "homepage": "https://github.com/anthonybloomer/itunes-search",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Anthony Bloomer",
-            "email": "ant0@protonmail.ch"
+            "email": "ant0@protonmail.ch",
+            "homepage": "https://anthonybloomer.github.io",
         }
     ],
     "require": {},
