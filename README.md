@@ -5,9 +5,17 @@ Read iTunes search documentation here:
 
 https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web-service-search-api.html
 
+## Install
+
+```
+composer require anthonybloomer/itunes-search=dev-master
+```
+
 ## Example
 
 ```php
+require_once __DIR__ . '/vendor/autoload.php';
+
 use iTunesSearch\iTunes;
 
 $result = iTunes::search(array(
