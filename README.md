@@ -7,8 +7,20 @@ https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web
 
 ## Install
 
+Install via Terminal:
+
 ```
 composer require anthonybloomer/itunes-search=dev-master
+```
+
+Or update your composer.json file:
+
+```
+{
+    "require": {
+        "anthonybloomer/itunes-search": "dev-master"
+    }
+}
 ```
 
 ## Example
