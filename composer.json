@@ -1,22 +1,27 @@
 {
-    "name": "anthonybloomer/itunes-search",
-    "description": "A simple PHP class for searching iTunes Store data.",
-    "keywords": ["iTunes"],
-    "homepage": "https://github.com/anthonybloomer/itunes-search",
-    "type": "library",
-    "license": "MIT",
-    "minimum-stability": "stable",
-    "authors": [
+    "name":"anthonybloomer/itunes-search",
+    "description":"A simple PHP class for searching iTunes Store data.",
+    "keywords":[
+        "iTunes",
+        "iTunes Search API"
+    ],
+    "homepage":"https://github.com/anthonybloomer/itunes-search",
+    "type":"library",
+    "license":"MIT",
+    "minimum-stability":"stable",
+    "authors":[
         {
-            "name": "Anthony Bloomer",
-            "email": "ant0@protonmail.ch",
-            "homepage": "https://anthonybloomer.github.io"
+            "name":"Anthony Bloomer",
+            "email":"ant0@protonmail.ch",
+            "homepage":"https://anthonybloomer.github.io"
         }
     ],
-    "require": {},
-    "autoload": {
-    	"psr-0": {
-            "iTunesSearch": "src/"
+    "require":{
+
+    },
+    "autoload":{
+        "psr-0":{
+            "iTunesSearch":"src/"
         }
     }
 }
