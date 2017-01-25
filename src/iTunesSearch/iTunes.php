@@ -11,21 +11,21 @@ namespace iTunesSearch;
 class iTunes
 {
 
-    const searchUrl = 'https://itunes.apple.com/search?';
-    const lookupUrl = 'https://itunes.apple.com/lookup?';
+    const search_url = 'https://itunes.apple.com/search?';
+    const lookup_url = 'https://itunes.apple.com/lookup?';
 
 
     public static function search($data)
     {
-        return self::getData(self::searchUrl . http_build_query($data));
+        return self::get_data(self::search_url . http_build_query($data));
     }
 
     public static function lookup($data)
     {
-        return self::getData(self::lookupUrl . http_build_query($data));
+        return self::get_data(self::lookup_url . http_build_query($data));
     }
 
-    private static function getData($url)
+    private static function get_data($url)
     {
         $content = file_get_contents($url);
         return json_decode($content);
