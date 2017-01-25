@@ -8,7 +8,7 @@ https://www.apple.com/itunes/affiliates/resources/documentation/itunes-store-web
 ## Example
 
 ```php
-include('iTunes.php');
+use iTunesSearch\iTunes;
 
 $result = iTunes::search(array(
     'term' => 'Taylor Swift',
