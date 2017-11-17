@@ -20,9 +20,9 @@ $result = iTunes::search(
 
         <? foreach ($result->results as $data) : ?>
             <tr>
-                <td> <? echo $data->artistName ?> </td>
-                <td> <? echo $data->trackName ?> </td>
-                <td> <? echo $data->collectionName ?> </td>
+                <td> <?= $data->artistName ?> </td>
+                <td> <?= $data->trackName ?> </td>
+                <td> <?= $data->collectionName ?> </td>
             </tr>
         <? endforeach ?>
 
@@ -37,7 +37,7 @@ $result = iTunes::lookup(array(
 
 foreach ($result->results as $data) : ?>
 
-    <h2><? echo $data->artistName ?></h2>
-    <p>Genre: <? echo $data->primaryGenreName ?></p>
+    <h2><?= $data->artistName ?></h2>
+    <p>Genre: <?= $data->primaryGenreName ?></p>
 
 <? endforeach ?>
