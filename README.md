@@ -31,7 +31,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use iTunesSearch\iTunes;
 
 $result = iTunes::search(array(
-    'term' => 'Taylor Swift',
+    'term' => 'Oasis',
     'media' => 'music'
 ));
 
